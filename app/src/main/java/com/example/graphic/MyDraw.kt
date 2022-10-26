@@ -10,6 +10,10 @@ class MyDraw(context:Context): View(context){
 
     private val paint:Paint = Paint()
 
+    override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec)
+    }
+    
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
 
